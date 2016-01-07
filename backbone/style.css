@@ -1,0 +1,130 @@
+/*****
+PARIENTE CSS
+*****/
+
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1em;
+  color: #303030;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  margin-top: 1em;
+}
+
+h1, h2, h3, h4 {
+  font-family: Lato;
+  font-size: 2em;
+  letter-spacing: 2.57px;
+  margin: 0em 0.5em 0.5em;
+}
+
+#id {
+  margin: auto;
+  width: 70%
+}
+
+a {
+  font-size: 20px;
+  color: #2D5787;
+}
+
+form {
+  margin: auto;
+  width: 80%;
+}
+
+label {
+  font-size: 1.5em;
+  letter-spacing: 2.06px;
+}
+
+.text-field {
+  width: 100%;
+  border: 1px solid #AFAFAF;
+  border-radius: 5px;
+  font-size: 1.5em;
+  color: #616161;
+  letter-spacing: 2.06px;
+  padding: 0.6em;
+}
+
+.button-green {
+  cursor: pointer;
+  background: #2B9C44;
+  border-radius: 5px;
+  width: 20%;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  letter-spacing: 2.06px;
+  padding: 0.6em;
+  border: 0px;
+  border-bottom: 0.2em solid #6FCA83;
+  margin-top: 1em;
+}
+
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  margin-bottom: 1em;
+}
+
+select {
+  margin-bottom: 1em
+}
+
+ul {
+  list-style: none;
+  margin-left: 5em
+}
+
+li {
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #303030;
+  padding: 1em;
+  margin-bottom: 1em
+}
+
+p {
+  margin: 0em 2em 0.5em
+}
+
+.movie-poster {
+  max-width: 30%
+}
+
+.movie-info {
+  width: 60%
+}
+
+/**** DRY CLASSES ****/
+
+.center {
+  text-align: center
+}
+
+.left {
+  float: left
+}
+
+.right {
+  float: right
+}
+
+.block {
+  display: block
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.align-top {
+  vertical-align: top;
+}

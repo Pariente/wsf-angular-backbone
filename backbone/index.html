@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Backbone Movie List</title>
+</head>
+<body>
+
+  <div id="app">
+
+    <h1>Backbone Movie List</h1>
+
+    <form action="#" id="new-movie">
+      <label>Title</label>
+      <input name="title" type="text" class="text-field" placeholder="Type title"/>
+      <label>Synopsis</label>
+      <input name="synopsis" type="text" class="text-field" placeholder="Type title"/>
+      <select name="genre" class="text-field"/>
+        <option value="" selected="selected" disabled="disabled">Genre</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
+        <option value="Rhriller">Thriller</option>
+      </select>
+      <label>Poster URL</label>
+      <input name="url" type="text" class="text-field" placeholder="Paste URL here"/>
+      <label>Cast</label>
+      <input name="cast" type="textarea" class="text-field" placeholder="Enter actors"/>
+      <button type="submit" class="button-green add-movie">Add movie</button>
+    </form>
+
+    <div class="movie-list">
+      <ul id="movieUL">
+        <li>
+          <div class="inline-block movie-poster">
+            <img src="">
+          </div>
+          <div class="inline-block align-top movie-info">
+            <h2></h2>
+            <p>Genre: <strong></strong></p>
+            <p>Synopsis: <strong></strong></p>
+            <p>Cast: <strong></strong></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.0/backbone.localStorage-min.js" type="text/javascript"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+ø
