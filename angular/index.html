@@ -3,25 +3,58 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <title>Angular Counter</title>
+  <title>Angular Movie List</title>
 </head>
 <body>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-  <script src="app.js"></script>
 
   <div id="app"
   ng-controller="AppController as AppCtrl">
 
-    <h1>Angular Counter</h1>
+    <h1>Angular Movie List</h1>
 
-    <h2 class="nb-click">
-      {{AppCtrl.countClick}}
-    </h2>
+    <form action
+    ng-submit="AppCtrl.addMovie()">
+      <label>Title</label>
+      <input type="text" class="text-field" placeholder="Type title"
+      ng-model="AppCtrl.formTitle" />
+      <label>Synopsis</label>
+      <input type="text" class="text-field" placeholder="Type title"
+      ng-model="AppCtrl.formSynopsis" />
+      <select name="genre" class="text-field"
+      ng-model="AppCtrl.formGenre" />
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="thriller">Thriller</option>
+      </select>
+      <label>Poster URL</label>
+      <input type="text" class="text-field" placeholder="Paste URL here"
+      ng-model="AppCtrl.formUrl" />
+      <label>Cast</label>
+      <input type="textarea" class="text-field" placeholder="Enter actors"
+      ng-model="AppCtrl.formCast" />
+      <button type="submit" class="button-green">Add movie</button>
+    </form>
 
-    <button href="#" class="increase" ng-click="AppCtrl.increaseCounter()">+</button>
-    <button href="#" class="decrease" ng-click="AppCtrl.decreaseCounter()">-</button>
-
+    <div class="movie-list">
+      <ul>
+        <li ng-repeat="movie in AppCtrl.movieList">
+          <div class="inline-block movie-poster">
+            <img src="{{movie.url}}">
+          </div>
+          <div class="inline-block align-top movie-info">
+            <h2>{{movie.title}}</h2>
+            <p>Genre: <strong>{{movie.genre}}</strong></p>
+            <p>Synopsis: <strong>{{movie.synopsis}}</strong></p>
+            <p>Cast: <strong>{{movie.cast}}</strong></p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
+ø

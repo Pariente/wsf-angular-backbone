@@ -19,8 +19,7 @@ h1, h2, h3, h4 {
   font-family: Lato;
   font-size: 2em;
   letter-spacing: 2.57px;
-  margin: 1em 0em;
-  margin-left: 10%;
+  margin: 0em 0.5em 0.5em;
 }
 
 #id {
@@ -38,6 +37,12 @@ form {
   width: 80%;
 }
 
+label {
+  font-size: 1.5em;
+  letter-spacing: 2.06px;
+  margin: 1em 0em 1em 0em;
+}
+
 .text-field {
   width: 100%;
   border: 1px solid #AFAFAF;
@@ -46,10 +51,9 @@ form {
   color: #616161;
   letter-spacing: 2.06px;
   padding: 0.6em;
-  box-sizing: border-box;
 }
 
-button {
+.button-green {
   cursor: pointer;
   background: #2B9C44;
   border-radius: 5px;
@@ -70,10 +74,29 @@ input {
   -webkit-border-radius: 0px
 }
 
-.user-list {
-  padding-top: 1em;
-  margin: auto;
+ul {
+  list-style: none;
+  margin-left: 5em
+}
+
+li {
   width: 80%;
+  border-radius: 5px;
+  border: 1px solid #303030;
+  padding: 1em;
+  margin-bottom: 1em
+}
+
+p {
+  margin: 0em 2em 0.5em
+}
+
+.movie-poster {
+  max-width: 30%
+}
+
+.movie-info {
+  width: 60%
 }
 
 /**** DRY CLASSES ****/
@@ -92,4 +115,12 @@ input {
 
 .block {
   display: block
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.align-top {
+  vertical-align: top;
 }
