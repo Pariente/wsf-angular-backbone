@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Angular Counter</title>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="app.js"></script>
+
+  <div id="app"
+  ng-controller="AppController as AppCtrl">
+
+    <h1>Angular Counter</h1>
+
+    <h2 class="nb-click">
+      {{AppCtrl.countClick}}
+    </h2>
+
+    <button href="#" class="increase" ng-click="AppCtrl.increaseCounter()">+</button>
+    <button href="#" class="decrease" ng-click="AppCtrl.decreaseCounter()">-</button>
+
+  </div>
+
+</body>
+</html>
